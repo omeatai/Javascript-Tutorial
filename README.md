@@ -286,15 +286,28 @@ console.log(myVariable.split(""));
 
 </details>
 
++NUMBERS
+
 <details>
-  <summary>13. sample</summary>
+  <summary>13. Comparing Number Data Types</summary>
 
 ```js
+// Numbers
+const myNumber = 42;
 
+const myFloat = 42.0;
+
+const myString = "42";
+
+console.log(myNumber === myFloat);
+console.log(myNumber === myString);
+console.log(myFloat === myString);
 ```
 
 ```js
-
+// true
+// false
+// false
 ```
 
 </details>
