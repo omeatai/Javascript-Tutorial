@@ -463,67 +463,79 @@ console.log(myString.toString());
 
 </details>
 
++MATH OBJECT METHODS
+
 <details>
-  <summary>20. sample</summary>
+  <summary>20. Math.PI</summary>
 
 ```js
+// Math Methods
 
+console.log(Math.PI);
 ```
 
 ```js
-
+// 3.141592653589793
 ```
 
 </details>
 
 <details>
-  <summary>21. sample</summary>
+  <summary>21. Math.trunc Method</summary>
 
 ```js
+// Math Methods
 
+console.log(Math.trunc(Math.PI));
 ```
 
 ```js
-
-```
-
-</details>
-
-<details>
-  <summary>22. sample</summary>
-
-```js
-
-```
-
-```js
-
+// 3
 ```
 
 </details>
 
 <details>
-  <summary>23. sample</summary>
+  <summary>22. Math.round Method</summary>
 
 ```js
+// Math Methods
 
+console.log(Math.round(3.64));
 ```
 
 ```js
-
+// 4
 ```
 
 </details>
 
 <details>
-  <summary>24. sample</summary>
+  <summary>23. MAth.ceil Method</summary>
 
 ```js
+// Math Methods
 
+console.log(Math.ceil(3.14));
 ```
 
 ```js
+// 4
+```
 
+</details>
+
+<details>
+  <summary>24. Math.floor Method</summary>
+
+```js
+// Math Methods
+
+console.log(Math.floor(3.74));
+```
+
+```js
+// 3
 ```
 
 </details>
