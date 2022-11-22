@@ -109,7 +109,7 @@ console.log("Hello World");
 +STRING METHODS
 
 <details>
-  <summary>5. Length</summary>
+  <summary>5. Length Method</summary>
 
 main.js:
 
@@ -128,7 +128,7 @@ console.log(myVariable.length);
 </details>
 
 <details>
-  <summary>6. sample</summary>
+  <summary>6. CharAt Method</summary>
 
 ```js
 
