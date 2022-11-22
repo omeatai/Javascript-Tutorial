@@ -404,9 +404,9 @@ console.log(Number.parseFloat(myString).toFixed(2));
 ```
 
 ```js
-// 42.00
-// 42.02
-// 42.01
+// '42.00'
+// '42.02'
+// '42.01'
 ```
 
 </details>
@@ -438,14 +438,27 @@ console.log(Number.parseInt(myString));
 </details>
 
 <details>
-  <summary>19. sample</summary>
+  <summary>19. toString Method</summary>
 
 ```js
+// Number Methods
+//The toString() method returns a string representing the number.
 
+const myNumber = 42;
+
+const myFloat = 42.01235235;
+
+const myString = "42.013425335";
+
+console.log(myNumber.toString());
+console.log(myFloat.toString());
+console.log(myString.toString());
 ```
 
 ```js
-
+// '42'
+// '42.01235235'
+// '42.013425335'
 ```
 
 </details>
