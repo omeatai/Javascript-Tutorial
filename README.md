@@ -11,14 +11,10 @@ Learn Javascript by Ifeanyi Omeata
 +INTRODUCTION
 
 <details>
-  <summary>1. sample</summary>
+  <summary>1. Javascript Comments</summary>
 
 ```js
-
-```
-
-```js
-
+// this is a comment
 ```
 
 </details>
