@@ -106,15 +106,23 @@ console.log("Hello World");
 
 </details>
 
++STRING METHODS
+
 <details>
-  <summary>5. sample</summary>
+  <summary>5. Length</summary>
+
+main.js:
 
 ```js
+// Strings
+const myVariable = "Mathematics";
 
+// The length property
+console.log(myVariable.length);
 ```
 
 ```js
-
+// 11
 ```
 
 </details>
