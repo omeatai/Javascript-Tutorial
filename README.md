@@ -258,14 +258,18 @@ console.log(myVariable.includes("mat"));
 </details>
 
 <details>
-  <summary>12. sample</summary>
+  <summary>12. Split Method</summary>
 
 ```js
+// Strings
+const myVariable = "Mathematics";
 
+// String Methods
+console.log(myVariable.split("e"));
 ```
 
 ```js
-
+// ['Math', 'matics']
 ```
 
 </details>
