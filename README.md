@@ -412,14 +412,27 @@ console.log(Number.parseFloat(myString).toFixed(2));
 </details>
 
 <details>
-  <summary>18. sample</summary>
+  <summary>18. parseInt Method</summary>
 
 ```js
+// Number Methods
+//The Number.parseInt() method parses an argument and returns a whole number. If a number cannot be parsed from the argument, it returns NaN.
 
+const myNumber = 42;
+
+const myFloat = 42.01235235;
+
+const myString = "42.013425335";
+
+console.log(Number.parseInt(myNumber));
+console.log(Number.parseInt(myFloat));
+console.log(Number.parseInt(myString));
 ```
 
 ```js
-
+// 42
+// 42
+// 42
 ```
 
 </details>
