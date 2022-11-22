@@ -241,14 +241,18 @@ console.log(myVariable.toLowerCase());
 </details>
 
 <details>
-  <summary>11. sample</summary>
+  <summary>11. Includes Method</summary>
 
 ```js
+// Strings
+const myVariable = "Mathematics";
 
+// String Methods
+console.log(myVariable.includes("mat"));
 ```
 
 ```js
-
+// true
 ```
 
 </details>
