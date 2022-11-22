@@ -183,14 +183,30 @@ console.log(myVariable.lastIndexOf("at"));
 </details>
 
 <details>
-  <summary>9. sample</summary>
+  <summary>9. Slice Method</summary>
 
 ```js
+// Strings
+const myVariable = "Mathematics";
 
+// String Methods
+console.log(myVariable.slice(4));
 ```
 
 ```js
+// ematics
+```
 
+```js
+// Strings
+const myVariable = "Mathematics";
+
+// String Methods
+console.log(myVariable.slice(4, 7));
+```
+
+```js
+// ema
 ```
 
 </details>
