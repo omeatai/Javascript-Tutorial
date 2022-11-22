@@ -511,7 +511,7 @@ console.log(Math.round(3.64));
 </details>
 
 <details>
-  <summary>23. MAth.ceil Method</summary>
+  <summary>23. Math.ceil Method</summary>
 
 ```js
 // Math Methods
@@ -541,14 +541,22 @@ console.log(Math.floor(3.74));
 </details>
 
 <details>
-  <summary>25. sample</summary>
+  <summary>25. Math.pow Method</summary>
 
 ```js
+// Math Methods
 
+console.log(Math.pow(2, 3));
+console.log(Math.pow(2, 4));
+console.log(Math.pow(2, 10));
+console.log(Math.pow(5, 2));
 ```
 
 ```js
-
+// 8
+// 16
+// 1024
+// 25
 ```
 
 </details>
