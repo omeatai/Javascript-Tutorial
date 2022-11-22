@@ -272,6 +272,18 @@ console.log(myVariable.split("e"));
 // ['Math', 'matics']
 ```
 
+```js
+// Strings
+const myVariable = "Mathematics";
+
+// String Methods
+console.log(myVariable.split(""));
+```
+
+```js
+// ['M', 'a', 't', 'h', 'e', 'm', 'a', 't', 'i', 'c', 's']
+```
+
 </details>
 
 <details>
