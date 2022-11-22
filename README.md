@@ -386,14 +386,27 @@ console.log(Number.parseFloat(myString));
 </details>
 
 <details>
-  <summary>17. sample</summary>
+  <summary>17. toFixed Method</summary>
 
 ```js
+// Number Methods
+//The toFixed() method formats a number according to how many decimal points you provide as the parameter.
 
+const myNumber = 42;
+
+const myFloat = 42.0155667;
+
+const myString = "42.01234abc";
+
+console.log(Number.parseFloat(myNumber).toFixed(2));
+console.log(Number.parseFloat(myFloat).toFixed(2));
+console.log(Number.parseFloat(myString).toFixed(2));
 ```
 
 ```js
-
+// 42.00
+// 42.02
+// 42.01
 ```
 
 </details>
