@@ -145,7 +145,9 @@ console.log(myVariable.charAt(0));
 </details>
 
 <details>
-  <summary>7. Indexof Method</summary>
+  <summary>7. IndexOf Method</summary>
+
+Provides First occurrence of a string or character:
 
 ```js
 // Strings
@@ -162,14 +164,20 @@ console.log(myVariable.indexOf("m"));
 </details>
 
 <details>
-  <summary>8. sample</summary>
+  <summary>8. LastIndexOf Method</summary>
+
+Provides Last occurrence of a string or character:
 
 ```js
+// Strings
+const myVariable = "Mathematics";
 
+// String Methods
+console.log(myVariable.lastIndexOf("at"));
 ```
 
 ```js
-
+// 6
 ```
 
 </details>
