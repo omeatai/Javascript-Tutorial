@@ -360,14 +360,27 @@ console.log(Number.isInteger(myString));
 </details>
 
 <details>
-  <summary>16. sample</summary>
+  <summary>16. parseFloat</summary>
 
 ```js
+// Number Methods
+//The Number.parseFloat() method parses an argument and returns a floating point number. If a number cannot be parsed from the argument, it returns NaN.
 
+const myNumber = 42;
+
+const myFloat = 42.01;
+
+const myString = "42.01";
+
+console.log(Number.parseFloat(myNumber));
+console.log(Number.parseFloat(myFloat));
+console.log(Number.parseFloat(myString));
 ```
 
 ```js
-
+// 42
+// 42.01
+// 42.01
 ```
 
 </details>
