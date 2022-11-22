@@ -286,7 +286,7 @@ console.log(myVariable.split(""));
 
 </details>
 
-+NUMBERS
++NUMBER METHODS
 
 <details>
   <summary>13. Comparing Number Data Types</summary>
@@ -334,14 +334,27 @@ console.log(myFloat === myString);
 </details>
 
 <details>
-  <summary>15. sample</summary>
+  <summary>15. isInteger method</summary>
 
 ```js
+// Number Methods
+//The Number.isInteger() method determines whether the passed value is an integer.
 
+const myNumber = 42;
+
+const myFloat = 42.01;
+
+const myString = "42";
+
+console.log(Number.isInteger(myNumber));
+console.log(Number.isInteger(myFloat));
+console.log(Number.isInteger(myString));
 ```
 
 ```js
-
+// true
+// false
+// false
 ```
 
 </details>
