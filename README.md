@@ -360,7 +360,7 @@ console.log(Number.isInteger(myString));
 </details>
 
 <details>
-  <summary>16. parseFloat</summary>
+  <summary>16. parseFloat Method</summary>
 
 ```js
 // Number Methods
