@@ -48,27 +48,60 @@ typeof userName;
 </details>
 
 <details>
-  <summary>3. sample</summary>
+  <summary>3. Script Tag Inline</summary>
 
-```js
+index.html:
 
-```
-
-```js
-
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Page</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <script defer>
+      console.log("Hello World");
+    </script>
+  </head>
+  <body>
+    <main><h1>My Page</h1></main>
+  </body>
+</html>
 ```
 
 </details>
 
 <details>
-  <summary>4. sample</summary>
+  <summary>4. Script Tag External</summary>
 
-```js
+index.html:
 
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Page</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="./js/main.js" defer></script>
+  </head>
+
+  <body>
+    <main>
+      <h1>My Page</h1>
+    </main>
+  </body>
+</html>
 ```
 
-```js
+main.js:
 
+```js
+console.log("Hello World");
 ```
 
 </details>
