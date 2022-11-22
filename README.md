@@ -131,24 +131,32 @@ console.log(myVariable.length);
   <summary>6. CharAt Method</summary>
 
 ```js
+// Strings
+const myVariable = "Mathematics";
 
+// String Methods
+console.log(myVariable.charAt(0));
 ```
 
 ```js
-
+// M
 ```
 
 </details>
 
 <details>
-  <summary>7. sample</summary>
+  <summary>7. Indexof Method</summary>
 
 ```js
+// Strings
+const myVariable = "Mathematics";
 
+// String Methods
+console.log(myVariable.indexOf("m"));
 ```
 
 ```js
-
+// 5
 ```
 
 </details>
