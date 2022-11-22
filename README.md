@@ -313,14 +313,22 @@ console.log(myFloat === myString);
 </details>
 
 <details>
-  <summary>14. sample</summary>
+  <summary>14. Number Function (Type Casting)</summary>
 
 ```js
+const myNumber = 42;
 
+const myFloat = 42.0;
+
+const myString = Number("42");
+
+console.log(typeof myString);
+console.log(myFloat === myString);
 ```
 
 ```js
-
+// number
+// true
 ```
 
 </details>
