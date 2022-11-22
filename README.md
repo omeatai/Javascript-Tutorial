@@ -212,14 +212,30 @@ console.log(myVariable.slice(4, 7));
 </details>
 
 <details>
-  <summary>10. sample</summary>
+  <summary>10. toUpperCase and toLowerCase Method</summary>
 
 ```js
+// Strings
+const myVariable = "Mathematics";
 
+// String Methods
+console.log(myVariable.toUpperCase());
 ```
 
 ```js
+// MATHEMATICS
+```
 
+```js
+// Strings
+const myVariable = "Mathematics";
+
+// String Methods
+console.log(myVariable.toLowerCase());
+```
+
+```js
+// mathematics
 ```
 
 </details>
