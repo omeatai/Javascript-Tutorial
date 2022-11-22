@@ -579,14 +579,24 @@ console.log(Math.max(2, 4, 6, 8, 10));
 </details>
 
 <details>
-  <summary>27. sample</summary>
+  <summary>27. Math.random Method</summary>
 
 ```js
+// Math Methods
 
+console.log(Math.random());
+console.log(Math.random());
+console.log(Math.random());
+console.log(Math.random());
+console.log(Math.random());
 ```
 
 ```js
-
+// 0.36200306252129133
+// 0.3547990279443072
+// 0.8440334640521379
+// 0.11641092554022392
+// 0.3834524936794077
 ```
 
 </details>
