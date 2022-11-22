@@ -562,14 +562,18 @@ console.log(Math.pow(5, 2));
 </details>
 
 <details>
-  <summary>26. sample</summary>
+  <summary>26. Math.min and Math.max Method</summary>
 
 ```js
+// Math Methods
 
+console.log(Math.min(2, 4, 6, 8, 10));
+console.log(Math.max(2, 4, 6, 8, 10));
 ```
 
 ```js
-
+// 2
+// 10
 ```
 
 </details>
