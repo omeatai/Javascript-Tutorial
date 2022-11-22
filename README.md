@@ -20,14 +20,29 @@ Learn Javascript by Ifeanyi Omeata
 </details>
 
 <details>
-  <summary>2. sample</summary>
+  <summary>2. Data Types</summary>
 
 ```js
+typeof "Dave";
+//'string'
 
-```
+typeof 7;
+//'number'
 
-```js
+typeof true;
+//'boolean'
 
+typeof {};
+//'object'
+
+typeof [];
+//'object'
+
+let userName;
+undefined;
+
+typeof userName;
+//'undefined'
 ```
 
 </details>
