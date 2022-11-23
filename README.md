@@ -602,27 +602,123 @@ console.log(Math.random());
 </details>
 
 <details>
-  <summary>28. sample</summary>
+  <summary>28. If-Else-If Statements</summary>
 
 ```js
+// Conditionals: If Statements
+// Conditionals: If Else Statements
+// Conditionals: If Else If Statements
 
+const customerIsBanned = false;
+let soup = "chicken noodle soup";
+let crackers = true;
+let reply;
+
+if (customerIsBanned) {
+  reply = "No soup for you!";
+} else if (soup && crackers) {
+  reply = `Here's your order of ${soup} & crackers.`;
+} else if (soup) {
+  reply = `Here's your order of ${soup}`;
+} else {
+  reply = "Sorry, we're out of soup.";
+}
+console.log(reply);
 ```
 
 ```js
+// Conditionals: If Statements
+// Conditionals: If Else Statements
+// Conditionals: If Else If Statements
 
+let testScore = 89;
+let collegeStudent = true;
+let grade;
+
+if (testScore >= 90) {
+  grade = "A";
+} else if (testScore >= 80) {
+  grade = "B";
+} else if (testScore >= 70) {
+  grade = "C";
+} else if (testScore >= 60) {
+  grade = "D";
+} else {
+  if (collegeStudent) {
+    grade = "U";
+  } else {
+    grade = "F";
+  }
+}
+
+console.log(grade);
 ```
 
 </details>
 
 <details>
-  <summary>29. sample</summary>
+  <summary>29. *Rock,Paper,Scissors Game*</summary>
 
-```js
+index.html:
 
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Page</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="./js/main.js" defer></script>
+  </head>
+
+  <body>
+    <main>
+      <h1>RPS GAME</h1>
+      <select id="userChoice">
+        <option value="Rock">Rock</option>
+        <option value="Paper">Paper</option>
+        <option value="Scissors">Scissors</option>
+      </select>
+      <button id="btn">Submit</button>
+    </main>
+  </body>
+</html>
 ```
 
-```js
+main.js:
 
+```js
+// Conditionals: If Statements
+// Conditionals: If Else Statements
+// Conditionals: If Else If Statements
+
+const win = "You Win!";
+const Loss = "You Lose!";
+const choice = ["Rock", "Paper", "Scissors"];
+
+data = {
+  RP: Loss,
+  RS: win,
+  RR: "Tie!",
+  SP: win,
+  SS: "Tie!",
+  SR: Loss,
+  PP: "Tie!",
+  PS: Loss,
+  PR: win,
+};
+
+document.getElementById("btn").addEventListener("click", () => {
+  const userChoice = document.getElementById("userChoice").value;
+  const computerChoice = choice[Math.floor(Math.random() * choice.length)];
+  if (userChoice) {
+    console.log(data[userChoice[0] + computerChoice[0]]);
+    console.log(`You chose: ${userChoice}`);
+    console.log(`Computer chose: ${computerChoice}`);
+  }
+});
 ```
 
 </details>
