@@ -877,8 +877,8 @@ console.log(name ?? "You didn't enter your name.");
 let name = prompt("Please enter your name.");
 const warning = "You didn't enter your name.";
 
-if (name) {
-  console.log(name);
+if (name && name.trim() !== "") {
+  console.log(name.trim());
 } else {
   console.log(`${warning} Please try again.`);
 }
