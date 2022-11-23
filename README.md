@@ -659,7 +659,7 @@ console.log(grade);
 </details>
 
 <details>
-  <summary>29. *Rock,Paper,Scissors Game*</summary>
+  <summary>29. *RPS Game 1*</summary>
 
 index.html:
 
@@ -887,14 +887,58 @@ if (name && name.trim() !== "") {
 </details>
 
 <details>
-  <summary>35. sample</summary>
+  <summary>35. *RPS Game 2*</summary>
 
 ```js
+// RPS Game
+const options = ["rock", "paper", "scissors"];
+const draw = "It was a Tie!";
+const win = "You Win!";
+const lose = "You Lose!";
 
+function start() {
+  const playGame = confirm("Do you want to play RPS?");
+  if (playGame) {
+    let userChoice = prompt("Choose rock, paper, or scissors");
+    if (options.includes(userChoice)) {
+      let computerChoice = options[Math.floor(Math.random() * options.length)];
+      const result =
+        userChoice === computerChoice
+          ? draw
+          : userChoice === "rock" && computerChoice === "scissors"
+          ? win
+          : userChoice === "paper" && computerChoice === "rock"
+          ? win
+          : userChoice === "scissors" && computerChoice === "paper"
+          ? win
+          : lose;
+      alert(
+        `You chose ${userChoice} and the computer chose ${computerChoice}. ${result}`
+      );
+      location.reload();
+    } else if (userChoice || userChoice === "") {
+      const retry = confirm(
+        "Please choose a valid option. Do you want to try again?"
+      );
+      if (retry) {
+        console.log("Starting again...");
+        location.reload();
+      } else {
+        alert("Sorry to see you go. Goodbye!");
+      }
+    } else {
+      alert("Sorry to see you go. Goodbye!");
+    }
+  } else {
+    alert("Ok, maybe next time. Goodbye!");
+  }
+}
+
+start();
 ```
 
 ```js
-
+// You chose paper and the computer chose paper. It was a Tie!
 ```
 
 </details>
