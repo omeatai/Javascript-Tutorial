@@ -724,14 +724,54 @@ document.getElementById("btn").addEventListener("click", () => {
 </details>
 
 <details>
-  <summary>30. sample</summary>
+  <summary>30. Switch Statements</summary>
 
 ```js
-
+// Conditionals: Switch Statements
+// syntax
+switch (expression OR value) {
+    case value1:
+        // code block
+        break;
+    case value2:
+        // code block
+        break;
+    default:
+        // code block
+}
 ```
 
-```js
+main.js:
 
+```js
+let playerOne = "rock";
+let computer = "paper";
+
+switch (playerOne) {
+  case computer:
+    console.log("Tie game!");
+    break;
+  case "rock":
+    if (computer === "paper") {
+      console.log("computer wins!");
+    } else {
+      console.log("playerOne wins!");
+    }
+    break;
+  case "paper":
+    if (computer === "scissors") {
+      console.log("computer wins!");
+    } else {
+      console.log("playerOne wins!");
+    }
+    break;
+  default:
+    if (computer === "rock") {
+      console.log("computer wins!");
+    } else {
+      console.log("playerOne wins!");
+    }
+}
 ```
 
 </details>
