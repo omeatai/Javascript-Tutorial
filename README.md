@@ -777,7 +777,7 @@ switch (playerOne) {
 </details>
 
 <details>
-  <summary>31. sample</summary>
+  <summary>31. Ternary Operator</summary>
 
 ```js
 
