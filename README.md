@@ -899,7 +899,7 @@ const lose = "You Lose!";
 function start() {
   const playGame = confirm("Do you want to play RPS?");
   if (playGame) {
-    let userChoice = prompt("Choose rock, paper, or scissors");
+    let userChoice = prompt("Choose rock, paper, or scissors").toLowerCase();
     if (options.includes(userChoice)) {
       let computerChoice = options[Math.floor(Math.random() * options.length)];
       const result =
@@ -938,7 +938,7 @@ start();
 ```
 
 ```js
-// You chose paper and the computer chose paper. It was a Tie!
+// You chose rock and the computer chose scissors. You Win!
 ```
 
 </details>
