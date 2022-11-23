@@ -834,41 +834,54 @@ console.log(result);
 
 </details>
 
++USER INPUTS
+
 <details>
-  <summary>32. sample</summary>
+  <summary>32. Alert</summary>
 
 ```js
-
-```
-
-```js
-
+// User Input
+alert("Hello World!");
 ```
 
 </details>
 
 <details>
-  <summary>33. sample</summary>
+  <summary>33. Confirm</summary>
 
 ```js
-
+// User Input
+const result = confirm("Ok === True\nCancel === False");
+console.log(result);
 ```
 
 ```js
-
+// User Input
+const result = confirm("Are you sure you want to delete this file?");
+console.log(result);
 ```
 
 </details>
 
 <details>
-  <summary>34. sample</summary>
+  <summary>34. Prompt</summary>
 
 ```js
-
+// User Input
+let name = prompt("Please enter your name.");
+console.log(name ?? "You didn't enter your name.");
 ```
 
 ```js
+// User Input
+let name = prompt("Please enter your name.");
+const warning = "You didn't enter your name.";
 
+if (name) {
+  console.log(name);
+} else {
+  console.log(`${warning} Please try again.`);
+}
 ```
 
 </details>
