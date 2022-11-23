@@ -810,6 +810,14 @@ let soupAccess = isCustomerBanned
 console.log(soupAccess);
 ```
 
+```js
+
+```
+
+```js
+
+```
+
 </details>
 
 <details>
