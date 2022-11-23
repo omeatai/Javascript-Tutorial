@@ -946,14 +946,26 @@ start();
 +LOOPS
 
 <details>
-  <summary>36. sample</summary>
+  <summary>36. While Loop</summary>
 
 ```js
+// Loops
+let myNumber = 0;
 
+while (myNumber < 50) {
+  console.log(myNumber);
+  myNumber++;
+}
 ```
 
 ```js
+// Loops
+let myNumber = 0;
 
+while (myNumber < 50) {
+  myNumber += 2;
+  console.log(myNumber);
+}
 ```
 
 </details>
