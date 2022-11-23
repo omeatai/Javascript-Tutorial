@@ -837,7 +837,7 @@ console.log(result);
 +USER INPUTS
 
 <details>
-  <summary>32. Alert</summary>
+  <summary>32. Alert Input</summary>
 
 ```js
 // User Input
@@ -847,7 +847,7 @@ alert("Hello World!");
 </details>
 
 <details>
-  <summary>33. Confirm</summary>
+  <summary>33. Confirm Input</summary>
 
 ```js
 // User Input
@@ -864,7 +864,7 @@ console.log(result);
 </details>
 
 <details>
-  <summary>34. Prompt</summary>
+  <summary>34. Prompt Input</summary>
 
 ```js
 // User Input
