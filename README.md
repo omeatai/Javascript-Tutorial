@@ -994,7 +994,7 @@ do {
 </details>
 
 <details>
-  <summary>38. sample</summary>
+  <summary>38. For Loop</summary>
 
 ```js
 
