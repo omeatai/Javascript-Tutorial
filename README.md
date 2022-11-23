@@ -782,11 +782,32 @@ switch (playerOne) {
   <summary>31. Ternary Operator</summary>
 
 ```js
+// Conditionals: Ternary Operator
 
+//syntax
+//condition? ifTrue: ifFalse;
+
+let soup = "Chicken Noodle Soup";
+let response = soup ? "Yes, we have soup." : "Sorry, no soup today.";
+
+console.log(response);
 ```
 
 ```js
+// Conditionals: Ternary Operator
 
+//syntax
+//condition ? ifTrue: iffalse;
+
+let soup = "Chicken Noodle Soup";
+let isCustomerBanned = false;
+let soupAccess = isCustomerBanned
+  ? "Sorry, no soup for you!"
+  : soup
+  ? `Yes, we have ${soup} today.`
+  : "Sorry, no soup today.";
+
+console.log(soupAccess);
 ```
 
 </details>
