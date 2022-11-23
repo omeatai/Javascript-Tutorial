@@ -971,14 +971,24 @@ while (myNumber < 50) {
 </details>
 
 <details>
-  <summary>37. sample</summary>
+  <summary>37. Do While Loop</summary>
 
 ```js
+// Loops
+let myNumber = 0;
 
+do {
+  console.log(myNumber);
+  myNumber += 2;
+} while (myNumber < 10);
 ```
 
 ```js
-
+// 0
+// 2
+// 4
+// 6
+// 8
 ```
 
 </details>
