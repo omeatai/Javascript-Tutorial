@@ -146,13 +146,20 @@ text += "</ul>";
 </details>
 
 <details>
-  <summary>8. Array PUSH</summary>
+  <summary>8. Array push()</summary>
 
-The easiest way to add a new element to an array is using the push() method:
+The push() method adds a new element to an array (at the end).
+The push() method returns the new array length
 
 ```js
-const fruits = ["Banana", "Orange", "Apple"];
-fruits.push("Lemon"); // Adds a new element (Lemon) to fruits
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo1").innerHTML = fruits.push("Kiwi");
+document.getElementById("demo2").innerHTML = fruits;
+```
+
+```js
+// 5
+// Banana,Orange,Apple,Mango,Kiwi
 ```
 
 ```js
@@ -164,71 +171,61 @@ fruits[fruits.length] = "Lemon"; // Adds "Lemon" to fruits
 // [Banana,Orange,Apple,Lemon]
 ```
 
-```js
+</details>
 
+<details>
+  <summary>9. Array pop()</summary>
+
+The pop() method removes the last element from an array.
+The pop() method returns the value that was "popped out".
+
+```js
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo1").innerHTML = fruits.pop();
+document.getElementById("demo2").innerHTML = fruits;
+```
+
+```js
+// Mango
+// Banana,Orange,Apple
 ```
 
 </details>
 
 <details>
-  <summary>9. Array POP</summary>
+  <summary>10. Array shift()</summary>
+
+The shift() method removes the first array element and "shifts" all other elements to a lower index. Shifting is equivalent to popping, but working on the first element instead of the last.
+The shift() method returns the value that was "shifted out".
 
 ```js
-
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo1").innerHTML = fruits.shift();
+document.getElementById("demo2").innerHTML = fruits;
 ```
 
 ```js
-
-```
-
-```js
-
-```
-
-```js
-
-```
-
-</details>
-
-<details>
-  <summary>10. Array SHIFT</summary>
-
-```js
-
-```
-
-```js
-
-```
-
-```js
-
-```
-
-```js
-
+// Banana
+// Orange,Apple,Mango
 ```
 
 </details>
 
 <details>
-  <summary>11. Array UNSHIFT</summary>
+  <summary>11. Array unshift()</summary>
+
+The unshift() method adds a new element to an array (at the beginning), and "unshifts" older elements.
+The unshift() method returns the new array length.
 
 ```js
-
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo1").innerHTML = fruits.unshift("Lemon");
+document.getElementById("demo2").innerHTML = fruits;
 ```
 
 ```js
-
-```
-
-```js
-
-```
-
-```js
-
+// 5
+// Lemon,Banana,Orange,Apple,Mango
 ```
 
 </details>
