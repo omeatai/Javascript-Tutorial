@@ -10,10 +10,10 @@ Learn Javascript by Ifeanyi Omeata
 
 +ARRAYS
 
-Arrays are a special kind of objects, with numbered indexes. Arrays use numbered indexes, while objects use named indexes.
-
 <details>
-  <summary>1 Creating an Array</summary>
+  <summary>1. Creating an Array</summary>
+
+Arrays are a special kind of objects, with numbered indexes. Arrays use numbered indexes, while objects use named indexes.
 
 ```js
 const cars = ["Saab", "Volvo", "BMW"];
