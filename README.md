@@ -234,7 +234,7 @@ fruits[fruits.length] = "Lemon"; // Adds "Lemon" to fruits
 </details>
 
 <details>
-  <summary>12. Array isArray and instanceof</summary>
+  <summary>12. Array isArray() and instanceof</summary>
 
 The isArray Method returns true if an object is an Array:
 
@@ -262,43 +262,32 @@ fruits instanceof Array;
 </details>
 
 <details>
-  <summary>13. sample</summary>
+  <summary>13. Array toString()</summary>
+
+The JavaScript method toString() converts an array to a string of (comma separated) array values.
 
 ```js
-
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.toString();
 ```
 
 ```js
-
-```
-
-```js
-
-```
-
-```js
-
+// Banana,Orange,Apple,Mango
 ```
 
 </details>
 
 <details>
-  <summary>14. sample</summary>
+  <summary>14. Array join()</summary>
+The join() method also joins all array elements into a string. It behaves just like toString(), but in addition you can specify the separator
 
 ```js
-
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.join(" * ");
 ```
 
 ```js
-
-```
-
-```js
-
-```
-
-```js
-
+// Banana * Orange * Apple * Mango
 ```
 
 </details>
