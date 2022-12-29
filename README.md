@@ -328,7 +328,7 @@ const myChildren = arr1.concat("Peter");
 </details>
 
 <details>
-  <summary>16. sample</summary>
+  <summary>16. Array splice()</summary>
 
 ```js
 
