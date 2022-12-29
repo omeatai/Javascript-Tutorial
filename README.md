@@ -276,7 +276,7 @@ document.getElementById("demo").innerHTML = fruits.toString();
 
 <details>
   <summary>14. Array join()</summary>
-The join() method also joins all array elements into a string. It behaves just like toString(), but in addition you can specify the separator
+The join() method also joins all array elements into a string. It behaves just like toString(), but in addition you can specify the separator.
 
 ```js
 const fruits = ["Banana", "Orange", "Apple", "Mango"];
@@ -290,22 +290,39 @@ document.getElementById("demo").innerHTML = fruits.join(" * ");
 </details>
 
 <details>
-  <summary>15. sample</summary>
+  <summary>15. Array concat()</summary>
+
+The concat() method creates a new array by merging (concatenating) existing arrays.
+The concat() method can take any number of array arguments.
 
 ```js
-
+const myGirls = ["Cecilie", "Lone"];
+const myBoys = ["Emil", "Tobias", "Linus"];
+const myChildren = myGirls.concat(myBoys);
 ```
 
 ```js
-
+// [Cecilie,Lone,Emil,Tobias,Linus]
 ```
 
 ```js
-
+const arr1 = ["Cecilie", "Lone"];
+const arr2 = ["Emil", "Tobias", "Linus"];
+const arr3 = ["Robin", "Morgan"];
+const myChildren = arr1.concat(arr2, arr3);
 ```
 
 ```js
+// [Cecilie,Lone,Emil,Tobias,Linus,Robin,Morgan]
+```
 
+```js
+const arr1 = ["Emil", "Tobias", "Linus"];
+const myChildren = arr1.concat("Peter");
+```
+
+```js
+// [Emil,Tobias,Linus,Peter]
 ```
 
 </details>
