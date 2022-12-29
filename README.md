@@ -77,61 +77,68 @@ cars[0] = "Opel";
   <summary>5. Array Length</summary>
 
 ```js
-
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+let length = fruits.length;
 ```
 
-```js
+Accessing the First Array Element:
 
+```js
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+let fruit = fruits[0];
 ```
 
-```js
-
-```
+Accessing the Last Array Element:
 
 ```js
-
-```
-
-</details>
-
-<details>
-  <summary>6. sample</summary>
-
-```js
-
-```
-
-```js
-
-```
-
-```js
-
-```
-
-```js
-
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+let fruit = fruits[fruits.length - 1];
 ```
 
 </details>
 
 <details>
-  <summary>7. sample</summary>
+  <summary>6. Looping Array Elements with For Loop</summary>
 
 ```js
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+let fLen = fruits.length;
 
+let text = "<ul>";
+for (let i = 0; i < fLen; i++) {
+  text += "<li>" + fruits[i] + "</li>";
+}
+text += "</ul>";
 ```
 
 ```js
+// Banana
+// Orange
+// Apple
+// Mango
+```
 
+</details>
+
+<details>
+  <summary>7. Looping Array Elements with For Each Loop</summary>
+
+```js
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+let fLen = fruits.length;
+
+let text = "<ul>";
+for (let i = 0; i < fLen; i++) {
+  text += "<li>" + fruits[i] + "</li>";
+}
+text += "</ul>";
 ```
 
 ```js
-
-```
-
-```js
-
+// Banana
+// Orange
+// Apple
+// Mango
 ```
 
 </details>
