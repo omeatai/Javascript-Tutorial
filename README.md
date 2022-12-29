@@ -8,7 +8,7 @@ Learn Javascript by Ifeanyi Omeata
 
 ### [1-JAVASCRIPT COURSE - W3SCHOOLS](#)
 
-+JAVASCRIPT ARRAYS
++ARRAYS
 
 <details>
   <summary>1 Creating an Array</summary>
@@ -19,6 +19,10 @@ const cars = ["Saab", "Volvo", "BMW"];
 
 ```js
 const cars = new Array("Saab", "Volvo", "BMW");
+```
+
+```js
+// [Saab,Volvo,BMW]
 ```
 
 </details>
@@ -33,46 +37,36 @@ cars[1] = "Volvo";
 cars[2] = "BMW";
 ```
 
-</details>
-
-<details>
-  <summary>3. sample</summary>
-
 ```js
-
-```
-
-```js
-
-```
-
-```js
-
-```
-
-```js
-
+// [Saab,Volvo,BMW]
 ```
 
 </details>
 
 <details>
-  <summary>4. sample</summary>
+  <summary>3. Accessing Array Elements</summary>
 
 ```js
-
+const cars = ["Saab", "Volvo", "BMW"];
+let car = cars[0];
 ```
 
 ```js
+// Saab
+```
 
+</details>
+
+<details>
+  <summary>4. Changing an Array Element</summary>
+
+```js
+const cars = ["Saab", "Volvo", "BMW"];
+cars[0] = "Opel";
 ```
 
 ```js
-
-```
-
-```js
-
+// [Opel,Volvo,BMW]
 ```
 
 </details>
