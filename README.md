@@ -234,22 +234,29 @@ fruits[fruits.length] = "Lemon"; // Adds "Lemon" to fruits
 </details>
 
 <details>
-  <summary>12. sample</summary>
+  <summary>12. Array isArray</summary>
+
+The isArray Method returns true if an object is an Array:
 
 ```js
-
+const fruits = ["Banana", "Orange", "Apple"];
+Array.isArray(fruits);
 ```
 
 ```js
+// true
+```
 
+The instanceof operator returns true if an object is created by a given constructor:
+
+```js
+const fruits = ["Banana", "Orange", "Apple"];
+
+fruits instanceof Array;
 ```
 
 ```js
-
-```
-
-```js
-
+// true
 ```
 
 </details>
