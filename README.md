@@ -6,48 +6,31 @@ Learn Javascript by Ifeanyi Omeata
 
 ---
 
-### [1-JAVASCRIPT COURSE - DAVE GRAY](#)
+### [1-JAVASCRIPT COURSE - W3SCHOOLS](#)
 
-+INTRODUCTION
++JAVASCRIPT ARRAYS
 
 <details>
-  <summary>1. sample</summary>
+  <summary>1 Creating an Array</summary>
 
 ```js
-
+const cars = ["Saab", "Volvo", "BMW"];
 ```
 
 ```js
-
-```
-
-```js
-
-```
-
-```js
-
+const cars = new Array("Saab", "Volvo", "BMW");
 ```
 
 </details>
 
 <details>
-  <summary>2. sample</summary>
+  <summary>2. Assign Values to Array</summary>
 
 ```js
-
-```
-
-```js
-
-```
-
-```js
-
-```
-
-```js
-
+const cars = [];
+cars[0] = "Saab";
+cars[1] = "Volvo";
+cars[2] = "BMW";
 ```
 
 </details>
