@@ -144,7 +144,7 @@ text += "</ul>";
 </details>
 
 <details>
-  <summary>8. sample</summary>
+  <summary>8. Array PUSH</summary>
 
 ```js
 
@@ -165,7 +165,7 @@ text += "</ul>";
 </details>
 
 <details>
-  <summary>9. sample</summary>
+  <summary>9. Array POP</summary>
 
 ```js
 
@@ -186,7 +186,7 @@ text += "</ul>";
 </details>
 
 <details>
-  <summary>10. sample</summary>
+  <summary>10. Array SHIFT</summary>
 
 ```js
 
@@ -207,7 +207,7 @@ text += "</ul>";
 </details>
 
 <details>
-  <summary>11. sample</summary>
+  <summary>11. Array UNSHIFT</summary>
 
 ```js
 
