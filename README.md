@@ -234,7 +234,7 @@ fruits[fruits.length] = "Lemon"; // Adds "Lemon" to fruits
 </details>
 
 <details>
-  <summary>12. Array isArray</summary>
+  <summary>12. Array isArray and instanceof</summary>
 
 The isArray Method returns true if an object is an Array:
 
