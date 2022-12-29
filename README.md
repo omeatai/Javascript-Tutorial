@@ -10,6 +10,8 @@ Learn Javascript by Ifeanyi Omeata
 
 +ARRAYS
 
+Arrays are a special kind of objects, with numbered indexes. Arrays use numbered indexes, while objects use named indexes.
+
 <details>
   <summary>1 Creating an Array</summary>
 
@@ -146,16 +148,20 @@ text += "</ul>";
 <details>
   <summary>8. Array PUSH</summary>
 
-```js
+The easiest way to add a new element to an array is using the push() method:
 
+```js
+const fruits = ["Banana", "Orange", "Apple"];
+fruits.push("Lemon"); // Adds a new element (Lemon) to fruits
 ```
 
 ```js
-
+const fruits = ["Banana", "Orange", "Apple"];
+fruits[fruits.length] = "Lemon"; // Adds "Lemon" to fruits
 ```
 
 ```js
-
+// [Banana,Orange,Apple,Lemon]
 ```
 
 ```js
