@@ -71,8 +71,10 @@ cars[0] = "Opel";
 
 </details>
 
++ARRAY PROPERTIES AND METHODS
+
 <details>
-  <summary>5. sample</summary>
+  <summary>5. Array Length</summary>
 
 ```js
 
