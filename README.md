@@ -865,22 +865,27 @@ function myFunction(value, index, array) {
 </details>
 
 <details>
-  <summary>32. sample</summary>
+  <summary>32. Array indexOf()</summary>
+The indexOf() method searches an array for an element value and returns its position.<br>
+The first item has position 0, the second item has position 1, and so on.<br>
+Syntax:<br>
+item - (Required) The item to search for.<br>
+start - (Optional) Where to start the search. <br>
+Negative values will start at the given position counting from the end, and search to the end.<br>
+Array.indexOf() returns -1 if the item is not found.<br>
+If the item is present more than once, it returns the position of the first occurrence.<br>
 
 ```js
-
+array.indexOf(item, start);
 ```
 
 ```js
-
+const fruits = ["Apple", "Orange", "Apple", "Mango"];
+fruits.indexOf("Apple");
 ```
 
 ```js
-
-```
-
-```js
-
+// 1
 ```
 
 </details>
