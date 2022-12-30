@@ -938,106 +938,110 @@ function myFunction(value, index, array) {
 </details>
 
 <details>
-  <summary>35. sample</summary>
+  <summary>35. Array findIndex()</summary>
+The findIndex() method returns the index of the first array element that passes a test function.<br>
+This example finds the index of the first element that is larger than 18.  <br>
+Note that the function takes 3 arguments:<br>
+-The item value<br>
+-The item index<br>
+-The array itself<br>
 
 ```js
+const numbers = [4, 9, 16, 25, 29];
+let first = numbers.findIndex(myFunction);
 
+function myFunction(value, index, array) {
+  return value > 18;
+}
 ```
 
 ```js
-
-```
-
-```js
-
-```
-
-```js
-
-```
-
-</details>
-
-<details>
-  <summary>36. sample</summary>
-
-```js
-
-```
-
-```js
-
-```
-
-```js
-
-```
-
-```js
-
+//  3
 ```
 
 </details>
 
 <details>
-  <summary>37. sample</summary>
+  <summary>36. Array.from()</summary>
+The Array.from() method returns an Array object from any object with a length property or any iterable object.<br>
+For Example, Create an Array from a String.<br>
 
 ```js
-
+Array.from("ABCDEFG");
 ```
 
 ```js
-
-```
-
-```js
-
-```
-
-```js
-
+// [A,B,C,D,E,F,G]
 ```
 
 </details>
 
 <details>
-  <summary>38. sample</summary>
+  <summary>37. Array Keys()</summary>
+The Array.keys() method returns an Array Iterator object with the keys of an array.<br>
+For Example, Create an Array Iterator object, containing the keys of the array.<br>
 
 ```js
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+const keys = fruits.keys();
 
+for (let x of keys) {
+  text += x + "<br>";
+}
 ```
 
 ```js
-
-```
-
-```js
-
-```
-
-```js
-
+// 0
+// 1
+// 2
+// 3
 ```
 
 </details>
 
 <details>
-  <summary>39. sample</summary>
+  <summary>38. Array entries()</summary>
+
+The entries() method returns an Array Iterator object with key/value pairs.<br>
+The entries() method does not change the original array.<br>
 
 ```js
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+const f = fruits.entries();
 
+for (let x of f) {
+  document.getElementById("demo").innerHTML += x;
+}
 ```
 
 ```js
+// [0, "Banana"]
+// [1, "Orange"]
+// [2, "Apple"]
+// [3, "Mango"]
+```
 
+</details>
+
+<details>
+  <summary>39. Array includes()</summary>
+
+Array.includes() allows us to check if an element is present in an array (including NaN, unlike indexOf).<br>
+Array.includes() allows to check for NaN values. Unlike Array.indexOf().<br>
+
+Syntax:
+
+```js
+array.includes(search - item);
 ```
 
 ```js
-
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.includes("Mango");
 ```
 
 ```js
-
+// true
 ```
 
 </details>
