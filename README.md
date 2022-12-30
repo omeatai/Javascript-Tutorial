@@ -891,43 +891,48 @@ fruits.indexOf("Apple");
 </details>
 
 <details>
-  <summary>33. sample</summary>
+  <summary>33. Array lastIndexOf()</summary>
+Array.lastIndexOf() is the same as Array.indexOf(), but returns the position of the last occurrence of the specified element.<br>
+Syntax:<br>
+item	- (Required) The item to search for.<br>
+start	- (Optional) Where to start the search. <br>
+Negative values will start at the given position counting from the end, and search to the beginning.<br>
 
 ```js
-
+array.lastIndexOf(item, start);
 ```
 
 ```js
-
+const fruits = ["Apple", "Orange", "Apple", "Mango"];
+fruits.lastIndexOf("Apple");
 ```
 
 ```js
-
-```
-
-```js
-
+// 2
 ```
 
 </details>
 
 <details>
-  <summary>34. sample</summary>
+  <summary>34. Array find()</summary>
+The find() method returns the value of the first array element that passes a test function.<br>
+The example finds (returns the value of) the first element that is larger than 18.<br>
+Note that the function takes 3 arguments:<br>
+-The item value<br>
+-The item index<br>
+-The array itself<br>
 
 ```js
+const numbers = [4, 9, 16, 25, 29];
+let first = numbers.find(myFunction);
 
+function myFunction(value, index, array) {
+  return value > 18;
+}
 ```
 
 ```js
-
-```
-
-```js
-
-```
-
-```js
-
+//  25
 ```
 
 </details>
