@@ -670,7 +670,7 @@ Note that the function takes 3 arguments:<br>
 -The item value<br>
 -The item index<br>
 -The array itself<br>
-The example above uses only the value parameter.<br>
+The example uses only the value parameter.<br>
 
 ```js
 const numbers = [45, 4, 9, 16, 25];
@@ -690,39 +690,37 @@ function myFunction(value, index, array) {
 // 25
 ```
 
-```js
+</details>
 
+<details>
+  <summary>26. Array map()</summary>
+The map() method creates a new array by performing a function on each array element.<br>
+The map() method does not execute the function for array elements without values.<br>
+The map() method does not change the original array.<br>
+This example multiplies each array value by 2.<br>
+Note that the function takes 3 arguments:<br>
+-The item value<br>
+-The item index<br>
+-The array itself<br>
+When a callback function uses only the value parameter, the index and array parameters can be omitted.<br>
+
+```js
+const numbers1 = [45, 4, 9, 16, 25];
+const numbers2 = numbers1.map(myFunction);
+
+function myFunction(value, index, array) {
+  return value * 2;
+}
 ```
 
 ```js
-
+// 90,8,18,32,50
 ```
 
 </details>
 
 <details>
-  <summary>26. sample</summary>
-
-```js
-
-```
-
-```js
-
-```
-
-```js
-
-```
-
-```js
-
-```
-
-</details>
-
-<details>
-  <summary>27. sample</summary>
+  <summary>27. Array filter()</summary>
 
 ```js
 
