@@ -746,42 +746,71 @@ function myFunction(value, index, array) {
 
 <details>
   <summary>28. Array reduce()</summary>
+The reduce() method runs a function on each array element to produce (reduce it to) a single value.<br>
+The reduce() method works from left-to-right in the array.<br>
+The reduce() method does not reduce the original array.<br>
+The example finds the sum of all numbers in an array.<br>
+Note that the function takes 4 arguments:<br>
+-The total (the initial value / previously returned value)<br>
+-The item value<br>
+-The item index<br>
+-The array itself<br>
+The example above does not use the index and array parameters. <br>
 
 ```js
+const numbers = [45, 4, 9, 16, 25];
+let sum = numbers.reduce(myFunction);
 
+function myFunction(total, value, index, array) {
+  return total + value;
+}
 ```
 
 ```js
+// 99
+```
 
+The reduce() method can accept an initial value:
+
+```js
+const numbers = [45, 4, 9, 16, 25];
+let sum = numbers.reduce(myFunction, 100);
+
+function myFunction(total, value) {
+  return total + value;
+}
 ```
 
 ```js
-
-```
-
-```js
-
+// 199
 ```
 
 </details>
 
 <details>
-  <summary>29. sample</summary>
+  <summary>29. Array reduceRight()</summary>
+The reduceRight() method runs a function on each array element to produce (reduce it to) a single value.<br>
+The reduceRight() works from right-to-left in the array.<br>
+The reduceRight() method does not reduce the original array.<br>
+The example finds the sum of all numbers in an array.<br>
+Note that the function takes 4 arguments:<br>
+-The total (the initial value / previously returned value)<br>
+-The item value<br>
+-The item index<br>
+-The array itself<br>
+The example above does not use the index and array parameters.<br>
 
 ```js
+const numbers = [45, 4, 9, 16, 25];
+let sum = numbers.reduceRight(myFunction);
 
+function myFunction(total, value, index, array) {
+  return total + value;
+}
 ```
 
 ```js
-
-```
-
-```js
-
-```
-
-```js
-
+// 99
 ```
 
 </details>
