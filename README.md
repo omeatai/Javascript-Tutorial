@@ -885,7 +885,7 @@ fruits.indexOf("Apple");
 ```
 
 ```js
-// 1
+// 0
 ```
 
 </details>
