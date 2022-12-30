@@ -664,14 +664,30 @@ cars.sort(function (a, b) {
 </details>
 
 <details>
-  <summary>25. sample</summary>
+  <summary>25. Array forEach()</summary>
+The forEach() method calls a function (a callback function) once for each array element.<br>
+Note that the function takes 3 arguments:<br>
+-The item value<br>
+-The item index<br>
+-The array itself<br>
+The example above uses only the value parameter.<br>
 
 ```js
+const numbers = [45, 4, 9, 16, 25];
+let txt = "";
+numbers.forEach(myFunction);
 
+function myFunction(value, index, array) {
+  txt += value + "<br>";
+}
 ```
 
 ```js
-
+// 45
+// 4
+// 9
+// 16
+// 25
 ```
 
 ```js
