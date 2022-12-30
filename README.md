@@ -348,38 +348,68 @@ fruits.splice(2, 0, "Lemon", "Kiwi");
 ```
 
 ```js
-
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+let removed = fruits.splice(2, 2, "Lemon", "Kiwi");
+document.getElementById("demo").innerHTML = "Removed Items:<br> " + removed;
 ```
 
 ```js
+// Removed Items:
+// Apple,Mango
+```
 
+```js
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.splice(0, 1);
+```
+
+```js
+// Orange,Apple,Mango
 ```
 
 </details>
 
 <details>
-  <summary>17. sample</summary>
+  <summary>17. Array slice()</summary>
+
+The slice() method slices out a piece of an array into a new array.<br>
+This example slices out a part of an array starting from array element 1 ("Orange").<br>
+The slice() method creates a new array.<br>
+The slice() method does not remove any elements from the source array.<br>
+The slice() method can take two arguments like slice(1, 3).<br>
+The method then selects elements from the start argument, and up to (but not including) the end argument.<br>
 
 ```js
-
+const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+const citrus = fruits.slice(1);
 ```
 
 ```js
-
+// Orange,Lemon,Apple,Mango
 ```
 
 ```js
-
+const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+const citrus = fruits.slice(3);
 ```
 
 ```js
+// Apple,Mango
+```
 
+```js
+const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+const citrus = fruits.slice(1, 3);
+```
+
+```js
+// Orange,Lemon
 ```
 
 </details>
 
 <details>
-  <summary>18. sample</summary>
+  <summary>18. Sorting an Array</summary>
 
 ```js
 
