@@ -613,7 +613,7 @@ function myArrayMin(arr) {
 JavaScript arrays often contain objects.<br>
 Even if objects have properties of different data types, the sort() method can be used to sort the array.<br>
 The solution is to write a compare function to compare the property values.<br>
-Comparing string properties is a little more complex.
+Comparing string properties is a little more complex:<br>
 
 ```js
 const cars = [
