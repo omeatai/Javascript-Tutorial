@@ -488,64 +488,91 @@ points.sort(function (a, b) {
 </details>
 
 <details>
-  <summary>21. sample</summary>
+  <summary>21. The Fisher Yates Method</summary>
+The random implementation for array.sort() is not accurate. It will favor some numbers over the others.<br>
+The most popular correct method, is called the Fisher Yates shuffle, and was introduced in data science as early as 1938!<br>
+In JavaScript the method can be translated to this.<br>
 
 ```js
+const points = [40, 100, 1, 5, 25, 10];
 
+for (let i = points.length - 1; i > 0; i--) {
+  let j = Math.floor(Math.random() * (i + 1));
+  let k = points[i];
+  points[i] = points[j];
+  points[j] = k;
+}
 ```
 
 ```js
-
+// 10,100,5,1,40,25
 ```
 
-```js
-
-```
+The random implementation for array.sort():
 
 ```js
-
-```
-
-</details>
-
-<details>
-  <summary>22. sample</summary>
-
-```js
-
-```
-
-```js
-
-```
-
-```js
-
-```
-
-```js
-
+const points = [40, 100, 1, 5, 25, 10];
+points.sort(function () {
+  return 0.5 - Math.random();
+});
 ```
 
 </details>
 
 <details>
-  <summary>23. sample</summary>
+  <summary>22. Find the Highest Array Value - Math.max.apply()</summary>
+There are no built-in functions for finding the max or min value in an array.<br>
+However, after you have sorted an array, you can use the index to obtain the highest and lowest values.<br>
+Sorting a whole array is a very inefficient method if you only want to find the highest (or lowest) value.<br>
+You can use Math.max.apply to find the highest number in an array.<br>
+Math.max.apply(null, [1, 2, 3]) is equivalent to Math.max(1, 2, 3).<br>
 
 ```js
-
+const points = [40, 100, 1, 5, 25, 10];
+points.sort(function (a, b) {
+  return a - b;
+});
+points[0];
+// now points[0] contains the lowest value
+// and points[points.length-1] contains the highest value
 ```
 
 ```js
-
+const points = [40, 100, 1, 5, 25, 10];
+Math.max.apply(null, points);
 ```
 
 ```js
+// 100
+```
 
+</details>
+
+<details>
+  <summary>23. Find the Lowest Array Value - Math.min.apply()</summary>
+There are no built-in functions for finding the max or min value in an array.<br>
+However, after you have sorted an array, you can use the index to obtain the highest and lowest values.<br>
+Sorting a whole array is a very inefficient method if you only want to find the highest (or lowest) value.<br>
+You can use Math.min.apply to find the lowest number in an array.<br>
+Math.min.apply(null, [1, 2, 3]) is equivalent to Math.min(1, 2, 3).<br>
+
+```js
+const points = [40, 100, 1, 5, 25, 10];
+points.sort(function (a, b) {
+  return b - a;
+});
+points[0];
+// now points[0] contains the highest value
+// and points[points.length-1] contains the lowest value
 ```
 
 ```js
+const points = [40, 100, 1, 5, 25, 10];
+Math.min.apply(null, points);
+```
 
+```js
+// 1
 ```
 
 </details>
