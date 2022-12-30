@@ -330,12 +330,19 @@ const myChildren = arr1.concat("Peter");
 <details>
   <summary>16. Array splice()</summary>
 
-```js
+The splice() method adds new items to an array. <br>
+The first parameter (2) defines the position where new elements should be added (spliced in). <br>
+The second parameter (0) defines how many elements should be removed.<br>
+The rest of the parameters ("Lemon" , "Kiwi") define the new elements to be added.<br>
+The splice() method returns an array with the deleted items.<br>
 
+```js
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.splice(2, 0, "Lemon", "Kiwi");
 ```
 
 ```js
-
+// Banana,Orange,Lemon,Kiwi,Apple,Mango
 ```
 
 ```js
