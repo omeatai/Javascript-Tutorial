@@ -721,27 +721,31 @@ function myFunction(value, index, array) {
 
 <details>
   <summary>27. Array filter()</summary>
+The filter() method creates a new array with array elements that pass a test.<br>
+This example creates a new array from elements with a value larger than 18.<br>
+Note that the function takes 3 arguments:<br>
+-The item value<br>
+-The item index<br>
+-The array itself<br>
+In the example, the callback function does not use the index and array parameters, so they can be omitted.<br>
 
 ```js
+const numbers = [45, 4, 9, 16, 25];
+const over18 = numbers.filter(myFunction);
 
+function myFunction(value, index, array) {
+  return value > 18;
+}
 ```
 
 ```js
-
-```
-
-```js
-
-```
-
-```js
-
+// 45,25
 ```
 
 </details>
 
 <details>
-  <summary>28. sample</summary>
+  <summary>28. Array reduce()</summary>
 
 ```js
 
