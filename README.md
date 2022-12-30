@@ -13,7 +13,8 @@ Learn Javascript by Ifeanyi Omeata
 <details>
   <summary>1. Creating an Array</summary>
 
-Arrays are a special kind of objects, with numbered indexes. Arrays use numbered indexes, while objects use named indexes.
+Arrays are a special kind of objects, with numbered indexes. <br>
+Arrays use numbered indexes, while objects use named indexes.<br>
 
 ```js
 const cars = ["Saab", "Volvo", "BMW"];
@@ -148,8 +149,8 @@ text += "</ul>";
 <details>
   <summary>8. Array push()</summary>
 
-The push() method adds a new element to an array (at the end).
-The push() method returns the new array length
+The push() method adds a new element to an array (at the end).<br>
+The push() method returns the new array length.<br>
 
 ```js
 const fruits = ["Banana", "Orange", "Apple", "Mango"];
@@ -176,8 +177,8 @@ fruits[fruits.length] = "Lemon"; // Adds "Lemon" to fruits
 <details>
   <summary>9. Array pop()</summary>
 
-The pop() method removes the last element from an array.
-The pop() method returns the value that was "popped out".
+The pop() method removes the last element from an array.<br>
+The pop() method returns the value that was "popped out".<br>
 
 ```js
 const fruits = ["Banana", "Orange", "Apple", "Mango"];
@@ -195,8 +196,8 @@ document.getElementById("demo2").innerHTML = fruits;
 <details>
   <summary>10. Array shift()</summary>
 
-The shift() method removes the first array element and "shifts" all other elements to a lower index. Shifting is equivalent to popping, but working on the first element instead of the last.
-The shift() method returns the value that was "shifted out".
+The shift() method removes the first array element and "shifts" all other elements to a lower index.<br> Shifting is equivalent to popping, but working on the first element instead of the last.<br>
+The shift() method returns the value that was "shifted out".<br>
 
 ```js
 const fruits = ["Banana", "Orange", "Apple", "Mango"];
@@ -214,8 +215,8 @@ document.getElementById("demo2").innerHTML = fruits;
 <details>
   <summary>11. Array unshift()</summary>
 
-The unshift() method adds a new element to an array (at the beginning), and "unshifts" older elements.
-The unshift() method returns the new array length.
+The unshift() method adds a new element to an array (at the beginning), and "unshifts" older elements.<br>
+The unshift() method returns the new array length.<br>
 
 ```js
 const fruits = ["Banana", "Orange", "Apple", "Mango"];
@@ -276,7 +277,8 @@ document.getElementById("demo").innerHTML = fruits.toString();
 
 <details>
   <summary>14. Array join()</summary>
-The join() method also joins all array elements into a string. It behaves just like toString(), but in addition you can specify the separator.
+The join() method also joins all array elements into a string. <br>
+It behaves just like toString(), but in addition you can specify the separator.<br>
 
 ```js
 const fruits = ["Banana", "Orange", "Apple", "Mango"];
@@ -292,8 +294,8 @@ document.getElementById("demo").innerHTML = fruits.join(" * ");
 <details>
   <summary>15. Array concat()</summary>
 
-The concat() method creates a new array by merging (concatenating) existing arrays.
-The concat() method can take any number of array arguments.
+The concat() method creates a new array by merging (concatenating) existing arrays.<br>
+The concat() method can take any number of array arguments.<br>
 
 ```js
 const myGirls = ["Cecilie", "Lone"];
