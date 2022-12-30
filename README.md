@@ -409,35 +409,17 @@ const citrus = fruits.slice(1, 3);
 </details>
 
 <details>
-  <summary>18. Sorting an Array</summary>
+  <summary>18. Array sort()</summary>
+
+The sort() method sorts an array alphabetically.
 
 ```js
-
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.sort();
 ```
 
 ```js
-
-```
-
-```js
-
-```
-
-```js
-
-```
-
-</details>
-
-<details>
-  <summary>19. sample</summary>
-
-```js
-
-```
-
-```js
-
+// Apple,Banana,Mango,Orange
 ```
 
 ```js
@@ -451,22 +433,56 @@ const citrus = fruits.slice(1, 3);
 </details>
 
 <details>
-  <summary>20. sample</summary>
+  <summary>19. Array reverse()</summary>
+The reverse() method reverses the elements in an array.<br>
+You can use it to sort an array in descending order.<br>
 
 ```js
-
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.sort();
+fruits.reverse();
 ```
 
 ```js
+// Orange,Mango,Banana,Apple
+```
 
+</details>
+
+<details>
+  <summary>20. Array Numeric Sort()</summary>
+By default, the sort() function sorts values as strings.<br>
+This works well for strings ("Apple" comes before "Banana").<br>
+However, if numbers are sorted as strings, "25" is bigger than "100", because "2" is bigger than "1".<br>
+Because of this, the sort() method will produce incorrect result when sorting numbers.<br>
+You can fix this by providing a compare function.<br>
+The purpose of the compare function is to define an alternative sort order.<br>
+The compare function should return a negative, zero, or positive value, depending on the arguments.<br>
+When the sort() function compares two values, it sends the values to the compare function, and sorts the values according to the returned (negative, zero, positive) value.<br>
+If the result is negative, a is sorted before b.<br>
+If the result is positive, b is sorted before a.<br>
+If the result is 0, no changes are done with the sort order of the two values.<br>
+
+```js
+const points = [40, 100, 1, 5, 25, 10];
+points.sort(function (a, b) {
+  return a - b;
+}); //Sort ascending
 ```
 
 ```js
-
+// 1,5,10,25,40,100
 ```
 
 ```js
+const points = [40, 100, 1, 5, 25, 10];
+points.sort(function (a, b) {
+  return b - a;
+}); //Sort descending
+```
 
+```js
+// 100,40,25,10,5,1
 ```
 
 </details>
