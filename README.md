@@ -816,43 +816,50 @@ function myFunction(total, value, index, array) {
 </details>
 
 <details>
-  <summary>30. sample</summary>
+  <summary>30. Array every()</summary>
+The every() method checks if all array values pass a test.<br>
+This example checks if all array values are larger than 18.<br>
+Note that the function takes 3 arguments:<br>
+-The item value<br>
+-The item index<br>
+-The array itself<br>
+When a callback function uses the first parameter only (value), the other parameters can be omitted.<br>
 
 ```js
+const numbers = [45, 4, 9, 16, 25];
+let allOver18 = numbers.every(myFunction);
 
+function myFunction(value, index, array) {
+  return value > 18;
+}
 ```
 
 ```js
-
-```
-
-```js
-
-```
-
-```js
-
+//  false
 ```
 
 </details>
 
 <details>
-  <summary>31. sample</summary>
+  <summary>31. Array some()</summary>
+The some() method checks if some array values pass a test.<br>
+This example checks if some array values are larger than 18.<br>
+Note that the function takes 3 arguments:<br>
+-The item value<br>
+-The item index<br>
+-The array itself<br>
 
 ```js
+const numbers = [45, 4, 9, 16, 25];
+let someOver18 = numbers.some(myFunction);
 
+function myFunction(value, index, array) {
+  return value > 18;
+}
 ```
 
 ```js
-
-```
-
-```js
-
-```
-
-```js
-
+// true
 ```
 
 </details>
