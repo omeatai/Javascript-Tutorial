@@ -488,7 +488,7 @@ points.sort(function (a, b) {
 </details>
 
 <details>
-  <summary>21. The Fisher Yates Method</summary>
+  <summary>21. The Fisher Yates Method (for Random Array Numeric Sorting)</summary>
 The random implementation for array.sort() is not accurate.<br>
 It will favor some numbers over the others.<br>
 The most popular correct method, is called the Fisher Yates shuffle, and was introduced in data science as early as 1938!<br>
