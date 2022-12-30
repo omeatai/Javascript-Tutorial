@@ -546,6 +546,21 @@ Math.max.apply(null, points);
 // 100
 ```
 
+Find Max "home made" method:
+
+```js
+function myArrayMax(arr) {
+  let len = arr.length;
+  let max = -Infinity;
+  while (len--) {
+    if (arr[len] > max) {
+      max = arr[len];
+    }
+  }
+  return max;
+}
+```
+
 </details>
 
 <details>
@@ -573,6 +588,21 @@ Math.min.apply(null, points);
 
 ```js
 // 1
+```
+
+Find Min "home made" method:
+
+```js
+function myArrayMin(arr) {
+  let len = arr.length;
+  let min = Infinity;
+  while (len--) {
+    if (arr[len] < min) {
+      min = arr[len];
+    }
+  }
+  return min;
+}
 ```
 
 </details>
