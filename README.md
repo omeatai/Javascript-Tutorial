@@ -489,7 +489,8 @@ points.sort(function (a, b) {
 
 <details>
   <summary>21. The Fisher Yates Method</summary>
-The random implementation for array.sort() is not accurate. It will favor some numbers over the others.<br>
+The random implementation for array.sort() is not accurate.<br>
+It will favor some numbers over the others.<br>
 The most popular correct method, is called the Fisher Yates shuffle, and was introduced in data science as early as 1938!<br>
 In JavaScript the method can be translated to this.<br>
 
@@ -609,10 +610,10 @@ function myArrayMin(arr) {
 
 <details>
   <summary>24. Sorting Objects in Arrays</summary>
-JavaScript arrays often contain objects.
-Even if objects have properties of different data types, the sort() method can be used to sort the array.
-The solution is to write a compare function to compare the property values.
-Comparing string properties is a little more complex.
+JavaScript arrays often contain objects.<br>
+Even if objects have properties of different data types, the sort() method can be used to sort the array.<br>
+The solution is to write a compare function to compare the property values.<br>
+Comparing string properties is a little more complex.<br>
 
 ```js
 const cars = [
