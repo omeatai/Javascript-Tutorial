@@ -1047,28 +1047,27 @@ fruits.includes("Mango");
 </details>
 
 <details>
-  <summary>40. sample</summary>
+  <summary>40. Array constructor</summary>
+The constructor property returns the function that created the Array prototype.
+For JavaScript arrays the constructor property returns:
 
 ```js
-
+array.constructor;
 ```
 
 ```js
-
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+let text = fruits.constructor;
 ```
 
 ```js
-
-```
-
-```js
-
+// function Array() { [native code] }
 ```
 
 </details>
 
 <details>
-  <summary>41. sample</summary>
+  <summary>41. Array copyWithin()</summary>
 
 ```js
 
