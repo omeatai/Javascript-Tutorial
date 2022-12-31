@@ -1409,6 +1409,10 @@ The replace() method does not change the string it is called on.<br>
 The replace() method returns a new string.<br>
 The replace() method replaces only the first match.<br>
 If you want to replace all matches, use a regular expression with the /g flag set.<br>
+By default, the replace() method is case sensitive. Writing MICROSOFT (with upper-case) will not work.
+To replace case insensitive, use a regular expression with an /i flag (insensitive).
+Regular expressions are written without quotes.
+To replace all matches, use a regular expression with a /g flag (global match).
 
 ```js
 let text = "Please visit Microsoft!";
@@ -1420,17 +1424,36 @@ let newText = text.replace("Microsoft", "W3Schools");
 ```
 
 ```js
-
+let text = "Please visit Microsoft and Microsoft!";
+let newText = text.replace("Microsoft", "W3Schools");
 ```
 
 ```js
+// Please visit W3Schools and Microsoft!
+```
 
+```js
+let text = "Please visit Microsoft!";
+let newText = text.replace(/MICROSOFT/i, "W3Schools");
+```
+
+```js
+// Please visit W3Schools!
+```
+
+```js
+let text = "Please visit Microsoft and Microsoft!";
+let newText = text.replace(/Microsoft/g, "W3Schools");
+```
+
+```js
+// Please visit W3Schools and W3Schools!
 ```
 
 </details>
 
 <details>
-  <summary>52. sample</summary>
+  <summary>52. String ReplaceAll()</summary>
 
 ```js
 
