@@ -1122,21 +1122,34 @@ fruits.copyWithin(2, 0, 2);
 
 <details>
   <summary>42. Array fill()</summary>
+The fill() method fills specified elements in an array with a value.<br>
+The fill() method overwrites the original array.<br>
+Start and end position can be specified. If not, all elements will be filled.  <br>
+Syntax:<br>
+value	- (Required) The value to fill in.<br>
+start	- (Optional) The start index (position). Default is 0.<br>
+end	- (Optional) The stop index (position). Default is array length.<br>
 
 ```js
-
+array.fill(value, start, end);
 ```
 
 ```js
-
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.fill("Kiwi");
 ```
 
 ```js
-
+// [Kiwi, Kiwi, Kiwi, Kiwi];
 ```
 
 ```js
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.fill("Kiwi", 2, 4);
+```
 
+```js
+// [Banana, Orange, Kiwi, Kiwi];
 ```
 
 </details>
