@@ -1295,6 +1295,11 @@ slice() extracts a part of a string and returns the extracted part in a new stri
 The method takes 2 parameters: start position, and end position (end not included).<br>
 If you omit the second parameter, the method will slice out the rest of the string.<br>
 If a parameter is negative, the position is counted from the end of the string.<br>
+Syntax:<br>
+
+```js
+slice(start, end);
+```
 
 ```js
 let text = "Apple, Banana, Kiwi";
@@ -1336,48 +1341,69 @@ let part = text.slice(-12, -6);
 
 <details>
   <summary>49. String substring()</summary>
+substring() is similar to slice().<br>
+The difference is that start and end values less than 0 are treated as 0 in substring().<br>
+If you omit the second parameter, substring() will slice out the rest of the string.<br>
+Syntax:<br>
 
 ```js
-
+substring(start, end);
 ```
 
 ```js
-
+let str = "Apple, Banana, Kiwi";
+let part = str.substring(7, 13);
 ```
 
 ```js
-
-```
-
-```js
-
-```
-
-</details>
-
-<details>
-  <summary>50. sample</summary>
-
-```js
-
-```
-
-```js
-
-```
-
-```js
-
-```
-
-```js
-
+// Banana
 ```
 
 </details>
 
 <details>
-  <summary>51. sample</summary>
+  <summary>50. String substr()</summary>
+substr() is similar to slice().<br>
+The difference is that the second parameter specifies the length of the extracted part.  <br>
+If you omit the second parameter, substr() will slice out the rest of the string.<br>
+If the first parameter is negative, the position counts from the end of the string.<br>
+Syntax:<br>
+
+```js
+substr(start, length);
+```
+
+```js
+let str = "Apple, Banana, Kiwi";
+let part = str.substr(7, 6);
+```
+
+```js
+// Banana
+```
+
+```js
+let str = "Apple, Banana, Kiwi";
+let part = str.substr(7);
+```
+
+```js
+// Banana, Kiwi
+```
+
+```js
+let str = "Apple, Banana, Kiwi";
+let part = str.substr(-4);
+```
+
+```js
+// Kiwi
+```
+
+</details>
+
+<details>
+  <summary>51. String replace()</summary>
 
 ```js
 
