@@ -1168,43 +1168,62 @@ fruits.fill("Kiwi", 2, 4);
 </details>
 
 <details>
-  <summary>43. sample</summary>
+  <summary>43. Array prototype</summary>
+prototype allows you to add new properties and methods to arrays.<br>
+prototype is a property available with all JavaScript objects.<br>
+You are not advised to change the prototype of an object that you do not control.<br>
+You should not change the prototype of built in JavaScript datatypes.<br>
+The JavaScript prototype property allows you to add new properties to objects.<br>
+Syntax:<br>
 
 ```js
-
+Array.prototype.name = value;
 ```
 
 ```js
+function Person(first, last, age, eyecolor) {
+  this.firstName = first;
+  this.lastName = last;
+  this.eyeColor = eyecolor;
+}
+const myFather = new Person("John", "Doe", "blue");
+const myMother = new Person("Sally", "Rally", "green");
 
+Person.prototype.nationality = "English";
+
+document.getElementById("demo").innerHTML =
+  "My father is " +
+  myFather.nationality +
+  "<br>" +
+  "My mother is " +
+  myMother.nationality;
 ```
 
 ```js
-
-```
-
-```js
-
+// My father is English
+// My mother is English
 ```
 
 </details>
 
 <details>
-  <summary>44. sample</summary>
+  <summary>44. Array valueOf()</summary>
+The valueOf() method returns the array itself.<br>
+The valueOf() method does not change the original array.<br>
+fruits.valueOf() returns the same as fruits.<br>
+Syntax:<br>
 
 ```js
-
+array.valueOf();
 ```
 
 ```js
-
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+const myArray = fruits.valueOf();
 ```
 
 ```js
-
-```
-
-```js
-
+// [Banana, Orange, Apple, Mango];
 ```
 
 </details>
