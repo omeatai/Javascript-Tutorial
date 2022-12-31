@@ -1232,63 +1232,59 @@ const myArray = fruits.valueOf();
 
 <details>
   <summary>45. String Length</summary>
+To find the length of a string, use the built-in length property.
 
 ```js
-
+let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+let length = text.length;
 ```
 
 ```js
-
-```
-
-```js
-
-```
-
-```js
-
+// 26
 ```
 
 </details>
 
 <details>
-  <summary>46. sample</summary>
+  <summary>46. Escape Character</summary>
+
+The backslash (\) escape character turns special characters into string characters.
+The sequence \" inserts a double quote in a string.
+The sequence \\ inserts a backslash in a string.
 
 ```js
-
+let text = 'We are the so-called "Vikings" from the north.';
 ```
 
 ```js
-
+// We are the so-called "Vikings" from the north.
 ```
 
 ```js
-
+let text = "The character \\ is called backslash.";
 ```
 
 ```js
-
+// The character \ is called backslash.
 ```
 
 </details>
 
 <details>
-  <summary>47. sample</summary>
+  <summary>47. Breaking Long Code Lines</summary>
+For best readability, programmers often like to avoid code lines longer than 80 characters.
+If a JavaScript statement does not fit on one line, the best place to break it is after an operator.
+You can also break up a code line within a text string with a single backslash.
+A safer way to break up a string, is to use string addition.
 
 ```js
-
+// document.getElementById("demo").innerHTML = "Hello " +
+// "Dolly!";
 ```
 
 ```js
-
-```
-
-```js
-
-```
-
-```js
-
+// document.getElementById("demo").innerHTML = "Hello \
+// Dolly!";
 ```
 
 </details>
