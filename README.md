@@ -1290,28 +1290,52 @@ A safer way to break up a string, is to use string addition.<br>
 </details>
 
 <details>
-  <summary>48. sample</summary>
+  <summary>48. String slice()</summary>
+slice() extracts a part of a string and returns the extracted part in a new string.<br>
+The method takes 2 parameters: start position, and end position (end not included).<br>
+If you omit the second parameter, the method will slice out the rest of the string.<br>
+If a parameter is negative, the position is counted from the end of the string.<br>
 
 ```js
-
+let text = "Apple, Banana, Kiwi";
+let part = text.slice(7, 13);
 ```
 
 ```js
-
+// Banana
 ```
 
 ```js
-
+let text = "Apple, Banana, Kiwi";
+let part = text.slice(7);
 ```
 
 ```js
+// Banana, Kiwi
+```
 
+```js
+let text = "Apple, Banana, Kiwi";
+let part = text.slice(-12);
+```
+
+```js
+// Banana, Kiwi
+```
+
+```js
+let text = "Apple, Banana, Kiwi";
+let part = text.slice(-12, -6);
+```
+
+```js
+// Banana
 ```
 
 </details>
 
 <details>
-  <summary>49. sample</summary>
+  <summary>49. String substring()</summary>
 
 ```js
 
