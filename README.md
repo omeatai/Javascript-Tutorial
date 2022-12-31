@@ -1404,13 +1404,19 @@ let part = str.substr(-4);
 
 <details>
   <summary>51. String replace()</summary>
+The replace() method replaces a specified value with another value in a string.  <br>
+The replace() method does not change the string it is called on.<br>
+The replace() method returns a new string.<br>
+The replace() method replaces only the first match.<br>
+If you want to replace all matches, use a regular expression with the /g flag set.<br>
 
 ```js
-
+let text = "Please visit Microsoft!";
+let newText = text.replace("Microsoft", "W3Schools");
 ```
 
 ```js
-
+// Please visit W3Schools!
 ```
 
 ```js
