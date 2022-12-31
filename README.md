@@ -1409,10 +1409,10 @@ The replace() method does not change the string it is called on.<br>
 The replace() method returns a new string.<br>
 The replace() method replaces only the first match.<br>
 If you want to replace all matches, use a regular expression with the /g flag set.<br>
-By default, the replace() method is case sensitive. Writing MICROSOFT (with upper-case) will not work.
-To replace case insensitive, use a regular expression with an /i flag (insensitive).
-Regular expressions are written without quotes.
-To replace all matches, use a regular expression with a /g flag (global match).
+By default, the replace() method is case sensitive. Writing MICROSOFT (with upper-case) will not work.<br>
+To replace case insensitive, use a regular expression with an /i flag (insensitive).<br>
+Regular expressions are written without quotes.<br>
+To replace all matches, use a regular expression with a /g flag (global match).<br>
 
 ```js
 let text = "Please visit Microsoft!";
