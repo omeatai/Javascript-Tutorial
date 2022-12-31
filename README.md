@@ -158,7 +158,7 @@ document.getElementById("demo2").innerHTML = fruits;
 
 ```js
 // 5
-// Banana,Orange,Apple,Mango,Kiwi
+// [Banana,Orange,Apple,Mango,Kiwi]
 ```
 
 ```js
@@ -186,7 +186,7 @@ document.getElementById("demo2").innerHTML = fruits;
 
 ```js
 // Mango
-// Banana,Orange,Apple
+// [Banana,Orange,Apple]
 ```
 
 </details>
@@ -205,7 +205,7 @@ document.getElementById("demo2").innerHTML = fruits;
 
 ```js
 // Banana
-// Orange,Apple,Mango
+// [Orange,Apple,Mango]
 ```
 
 </details>
@@ -224,7 +224,7 @@ document.getElementById("demo2").innerHTML = fruits;
 
 ```js
 // 5
-// Lemon,Banana,Orange,Apple,Mango
+// [Lemon,Banana,Orange,Apple,Mango]
 ```
 
 </details>
@@ -342,7 +342,7 @@ fruits.splice(2, 0, "Lemon", "Kiwi");
 ```
 
 ```js
-// Banana,Orange,Lemon,Kiwi,Apple,Mango
+// [Banana,Orange,Lemon,Kiwi,Apple,Mango]
 ```
 
 ```js
@@ -353,7 +353,7 @@ document.getElementById("demo").innerHTML = "Removed Items:<br> " + removed;
 
 ```js
 // Removed Items:
-// Apple,Mango
+// [Apple,Mango]
 ```
 
 ```js
@@ -362,7 +362,7 @@ fruits.splice(0, 1);
 ```
 
 ```js
-// Orange,Apple,Mango
+// [Orange,Apple,Mango]
 ```
 
 </details>
@@ -383,7 +383,7 @@ const citrus = fruits.slice(1);
 ```
 
 ```js
-// Orange,Lemon,Apple,Mango
+// [Orange,Lemon,Apple,Mango]
 ```
 
 ```js
@@ -392,7 +392,7 @@ const citrus = fruits.slice(3);
 ```
 
 ```js
-// Apple,Mango
+// [Apple,Mango]
 ```
 
 ```js
@@ -401,7 +401,7 @@ const citrus = fruits.slice(1, 3);
 ```
 
 ```js
-// Orange,Lemon
+// [Orange,Lemon]
 ```
 
 </details>
@@ -417,15 +417,7 @@ fruits.sort();
 ```
 
 ```js
-// Apple,Banana,Mango,Orange
-```
-
-```js
-
-```
-
-```js
-
+// [Apple,Banana,Mango,Orange]
 ```
 
 </details>
@@ -442,7 +434,7 @@ fruits.reverse();
 ```
 
 ```js
-// Orange,Mango,Banana,Apple
+// [Orange,Mango,Banana,Apple]
 ```
 
 </details>
@@ -469,7 +461,7 @@ points.sort(function (a, b) {
 ```
 
 ```js
-// 1,5,10,25,40,100
+// [1,5,10,25,40,100]
 ```
 
 ```js
@@ -480,7 +472,7 @@ points.sort(function (a, b) {
 ```
 
 ```js
-// 100,40,25,10,5,1
+// [100,40,25,10,5,1]
 ```
 
 </details>
@@ -504,7 +496,7 @@ for (let i = points.length - 1; i > 0; i--) {
 ```
 
 ```js
-// 10,100,5,1,40,25
+// [10,100,5,1,40,25]
 ```
 
 The random implementation for array.sort():
@@ -714,7 +706,7 @@ function myFunction(value, index, array) {
 ```
 
 ```js
-// 90,8,18,32,50
+// [90,8,18,32,50]
 ```
 
 </details>
@@ -739,7 +731,7 @@ function myFunction(value, index, array) {
 ```
 
 ```js
-// 45,25
+// [45,25]
 ```
 
 </details>
@@ -1048,8 +1040,8 @@ fruits.includes("Mango");
 
 <details>
   <summary>40. Array constructor</summary>
-The constructor property returns the function that created the Array prototype.
-For JavaScript arrays the constructor property returns:
+The constructor property returns the function that created the Array prototype.<br>
+For JavaScript arrays the constructor property returns:<br>
 
 ```js
 array.constructor;
@@ -1068,21 +1060,34 @@ let text = fruits.constructor;
 
 <details>
   <summary>41. Array copyWithin()</summary>
+The copyWithin() method copies array elements to another position in the array.<br>
+The copyWithin() method overwrites the existing values.<br>
+The copyWithin() method does not add items to the array.<br>
+Syntax:<br>
+target -	(Required) The index (position) to copy the elements to.<br>
+start	 - (Optional) The start index (position). Default is 0.<br>
+end	- (Optional) The end index (position). Default is the array length.<br>
 
 ```js
-
+array.copyWithin(target, start, end);
 ```
 
 ```js
-
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.copyWithin(2, 0);
 ```
 
 ```js
-
+// [Banana, Orange, Banana, Orange];
 ```
 
 ```js
+const fruits = ["Banana", "Orange", "Apple", "Mango", "Kiwi", "Papaya"];
+fruits.copyWithin(2, 0, 2);
+```
 
+```js
+// [Banana, Orange, Banana, Orange, Kiwi, Papaya];
 ```
 
 </details>
