@@ -1228,8 +1228,10 @@ const myArray = fruits.valueOf();
 
 </details>
 
++STRINGS
+
 <details>
-  <summary>45. sample</summary>
+  <summary>45. String Length</summary>
 
 ```js
 
