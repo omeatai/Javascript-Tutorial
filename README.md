@@ -294,6 +294,14 @@ document.getElementById("demo").innerHTML = fruits.join(" * ");
 
 The concat() method creates a new array by merging (concatenating) existing arrays.<br>
 The concat() method can take any number of array arguments.<br>
+The concat() method concatenates (joins) two or more arrays.<br>
+The concat() method returns a new array, containing the joined arrays.<br>
+The concat() method does not change the existing arrays.<br>
+Syntax:<br>
+
+```js
+array1.concat(array2, array3, ..., arrayX)
+```
 
 ```js
 const myGirls = ["Cecilie", "Lone"];
@@ -816,6 +824,21 @@ Note that the function takes 3 arguments:<br>
 -The item index<br>
 -The array itself<br>
 When a callback function uses the first parameter only (value), the other parameters can be omitted.<br>
+The every() method executes a function for each array element.<br>
+The every() method returns true if the function returns true for all elements.<br>
+The every() method returns false if the function returns false for one element.<br>
+The every() method does not execute the function for empty elements.<br>
+The every() method does not change the original array.<br>
+Syntax:<br>
+function() -	(Required) A function to be run for each element in the array.<br>
+currentValue - (Required) The value of the current element.<br>
+index	- (Optional) The index of the current element.<br>
+arr	- (Optional) The array of the current element.<br>
+thisValue	- (Optional) Default undefined. A value passed to the function as its this value.<br>
+
+```js
+array.every(function(currentValue, index, arr), thisValue)
+```
 
 ```js
 const numbers = [45, 4, 9, 16, 25];
@@ -996,6 +1019,11 @@ for (let x of keys) {
 
 The entries() method returns an Array Iterator object with key/value pairs.<br>
 The entries() method does not change the original array.<br>
+Syntax:<br>
+
+```js
+array.entries();
+```
 
 ```js
 const fruits = ["Banana", "Orange", "Apple", "Mango"];
@@ -1093,7 +1121,7 @@ fruits.copyWithin(2, 0, 2);
 </details>
 
 <details>
-  <summary>42. sample</summary>
+  <summary>42. Array fill()</summary>
 
 ```js
 
