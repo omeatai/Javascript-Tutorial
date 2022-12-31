@@ -1248,9 +1248,9 @@ let length = text.length;
 <details>
   <summary>46. Escape Character</summary>
 
-The backslash (\) escape character turns special characters into string characters.
-The sequence \" inserts a double quote in a string.
-The sequence \\ inserts a backslash in a string.
+The backslash (\) escape character turns special characters into string characters.<br>
+The sequence \" inserts a double quote in a string.<br>
+The sequence \\ inserts a backslash in a string.<br>
 
 ```js
 let text = 'We are the so-called "Vikings" from the north.';
@@ -1272,10 +1272,10 @@ let text = "The character \\ is called backslash.";
 
 <details>
   <summary>47. Breaking Long Code Lines</summary>
-For best readability, programmers often like to avoid code lines longer than 80 characters.
-If a JavaScript statement does not fit on one line, the best place to break it is after an operator.
-You can also break up a code line within a text string with a single backslash.
-A safer way to break up a string, is to use string addition.
+For best readability, programmers often like to avoid code lines longer than 80 characters.<br>
+If a JavaScript statement does not fit on one line, the best place to break it is after an operator.<br>
+You can also break up a code line within a text string with a single backslash.<br>
+A safer way to break up a string, is to use string addition.<br>
 
 ```js
 // document.getElementById("demo").innerHTML = "Hello " +
